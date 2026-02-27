@@ -1,0 +1,13 @@
+.product-price {
+    font-family: var(--font-roboto-mono);
+    font-size: 16px;
+    line-height: 110%;
+
+    .product-price-int {
+        color: #222222;
+    }
+
+    .product-price-decimal {
+        color: #999999;
+    }
+}

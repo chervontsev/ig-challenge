@@ -1,0 +1,17 @@
+.products-data-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .products-data-title {
+        font-family: var(--font-exo2);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .products-data-controls {
+        display: flex;
+        gap: 8px;
+    }
+}

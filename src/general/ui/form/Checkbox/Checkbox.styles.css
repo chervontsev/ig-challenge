@@ -1,0 +1,55 @@
+.checkbox-field {
+    --checkbox-label-font-shorthand: 400 12/1 sans-serif;
+    --checkbox-border-color: grey;
+    --checkbox-bg-color: white;
+    --checkbox-label-color: grey;
+
+    --checkbox-size: 20px;
+    --check-mark-size: 10px;
+    --check-mark-bg-color: transparent;
+    --check-mark-checked-bg-color: grey;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+
+    .checkbox {
+        overflow: hidden;
+        position: relative;
+        display: grid;
+        place-content: center;
+        width: var(--checkbox-size);
+        height: var(--checkbox-size);
+        border-radius: 4px;
+        border: 1px solid var(--checkbox-border-color);
+        background-color: var(--checkbox-bg-color);
+        transition: var(--base-transition);
+
+        input {
+            position: absolute;
+            inset: -1px;
+            opacity: 0;
+        }
+
+        &:after {
+            --check-mark-size: 10px;
+            content: '';
+            display: block;
+            width: var(--check-mark-size);
+            height: var(--check-mark-size);
+            border-radius: 2px;
+            background-color: var(--check-mark-bg-color);
+            transition: var(--base-transition);
+        }
+
+        &:has(:checked) {
+            --check-mark-bg-color: var(--check-mark-checked-bg-color);
+        }
+    }
+
+    .labelText {
+        font: var(--checkbox-label-font-shorthand);
+        color: var(--checkbox-label-color);
+    }
+}

@@ -1,0 +1,5 @@
+.product-rating {
+    &.product-rating-low span {
+        color: #F11010;
+    }
+}

@@ -1,0 +1,171 @@
+.login-form {
+    place-self: center center;
+    width: 527px;
+    padding: 1px;
+    box-shadow: 0 24px 32px 0 rgba(0, 0, 0, .04);
+    border-radius: 34px;
+    border: 6px solid #FFFFFF;
+    background:
+        linear-gradient(180deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 0) 50%),
+        #FFFFFF;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 48px;
+        border-radius: 27px;
+        background:
+            linear-gradient(180deg, rgba(35, 35, 35, .03) 0%, rgba(35, 35, 35, 0) 50%),
+            #FFFFFF;
+    }
+
+    .logo {
+        box-shadow: 0 12px 8px 0 rgba(0, 0, 0, .03);
+        padding: 1px;
+        border-radius: 50%;
+        border: 2px solid #FFFFFF;
+        background: black;
+        background:
+            linear-gradient(180deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 0) 70%),
+            #FFFFFF;
+
+        .logo-inner {
+            --size: 50px;
+            display: grid;
+            place-content: center;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            background:
+                linear-gradient(180deg, rgba(35, 35, 35, .03) 50%, rgba(35, 35, 35, 0) 100%),
+                #FFFFFF;
+        }
+    }
+
+    hgroup {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+
+        h1 {
+            font-family: var(--font-inter);
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 110%;
+            letter-spacing: -.5px;
+            color: #232323;
+        }
+
+        h4 {
+            background:
+                linear-gradient(180deg, rgba(0, 0, 0 ,.17), rgba(0, 0, 0 , 0)),
+                #E0E0E0;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            font-family: var(--font-inter);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            color: transparent;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+
+        .remember {
+            padding: 4px 0;
+        }
+    }
+
+    .auth-form-status {
+        text-align: center;
+        font-family: var(--font-inter);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #F11010;
+    }
+
+    .auth-footer {
+        font-family: var(--font-inter);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #6C6C6C;
+
+        a {
+            font-weight: 600;
+
+            &:hover {
+                --link-text-color: #367AFF;
+                --link-border-color: #367AFF;
+            }
+        }
+    }
+
+    .checkbox-field {
+        --checkbox-label-font-shorthand: 500 16px/150% var(--font-inter);
+        --checkbox-border-color: #B2B3B9;
+        --checkbox-bg-color: #ffffff;
+        --checkbox-label-color: #9C9C9C;
+        --check-mark-checked-bg-color: #242EDB;
+
+        &:hover {
+            --checkbox-border-color: #242EDB;
+            --checkbox-label-color: #367AFF;
+        }
+    }
+
+    .btn {
+        --btn-width: 100%;
+        --btn-border-color: #367AFF;
+        --btn-font-family: var(--font-inter);
+        --btn-font-size: 18px;
+
+        box-shadow:
+            inset 0 -2px 0 -1px rgba(0, 0, 0, .08),
+            0 8px 8px 0 rgba(54, 122 ,255 ,.03);
+        background:
+            linear-gradient(180deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, 0)),
+            #242EDB;
+
+        &:hover {
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, 0)),
+                #367AFF;
+        }
+    }
+}
+
+.login-form-input {
+    --input-size: 53px;
+    --input-border-radius: 12px;
+    --input-font-shorthand: 500 18px/150% var(--font-inter);
+    --input-label-font-shorthand: 500 18px/150% var(--font-inter);
+    --input-error-font-shorthand: 500 18px/150% var(--font-inter);
+
+    --input-border-color: #EDEDED;
+    --input-bg-color: #ffffff;
+    --input-text-color: #232323;
+    --input-label-text-color: #232323;
+    --input-error-text-color: #F11010;
+    --input-placeholder-text-color: #999999;
+    --icon-fill-color: #EDEDED;
+
+    &:hover,
+    &:focus-within {
+        --input-border-color: #999999;
+    }
+
+    .toggle:hover {
+        --icon-fill-color: #999999;
+    }
+}

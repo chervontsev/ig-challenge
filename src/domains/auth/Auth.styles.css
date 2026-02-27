@@ -1,0 +1,6 @@
+.auth-page {
+    display: grid;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: #F9F9F9;
+}

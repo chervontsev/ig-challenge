@@ -1,0 +1,44 @@
+.paging {
+    display: flex;
+    gap: 8px;
+
+    button {
+        display: grid;
+        place-content: center;
+        width: 30px;
+        height: 30px;
+    }
+
+    .page-arrow {
+        svg {
+            transform: scale(.83);
+        }
+        path {
+            fill: var(--page-arrow-fill-color, #B2B3B9);
+        }
+        &:not(:disabled):hover {
+            --page-arrow-fill-color: #797FEA;
+        }
+    }
+
+    .page {
+        border-radius: 4px;
+        border: 1px solid var(--page-border-color, #ECECEB);
+        background-color: var(--page-bg-color, #fff);
+        font-family: var(--font-exo2);
+        font-size: 14px;
+        color: var(--page-text-color, #B2B3B9);
+        transition: var(--base-transition);
+
+        &.current {
+            --page-border-color: transparent;
+            --page-bg-color: #797FEA;
+            --page-text-color: #fff;
+        }
+
+        &:not(.current):hover {
+            --page-border-color: #797FEA;
+            --page-text-color: #797FEA;
+        }
+    }
+}

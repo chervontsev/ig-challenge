@@ -1,0 +1,25 @@
+
+[data-col="product"] {
+    text-align: left;
+}
+
+[data-col="brand"] {
+    text-align: center;
+}
+
+[data-col="sku"] {
+    text-align: center;
+    white-space: nowrap;
+}
+
+[data-col="rating"] {
+    text-align: center;
+}
+
+[data-col="price"] {
+    text-align: center;
+}
+
+[data-col="availability"] {
+    text-align: center;
+}

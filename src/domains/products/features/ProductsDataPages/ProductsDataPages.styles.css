@@ -1,0 +1,16 @@
+.product-pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .page-stats {
+        font-family: var(--font-roboto);
+        font-size: 18px;
+        line-height: 100%;
+        color: #969B9F;
+
+        strong {
+            color: #333333;
+        }
+    }
+}

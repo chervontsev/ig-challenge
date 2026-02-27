@@ -1,0 +1,29 @@
+.separator {
+    display: flex;
+    align-items: center;
+    height: 24px;
+
+    &:before,
+    &:after {
+        flex-grow: 1;
+        content: '';
+        display: block;
+        border-top: 1px solid #ededed;
+    }
+
+    span {
+        display: block;
+        padding: 0 10px;
+        background:
+            linear-gradient(180deg, rgba(0, 0, 0 ,.17), rgba(0, 0, 0 , 0)),
+            #E0E0E0;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        font-family: var(--font-inter);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: transparent;
+    }
+}

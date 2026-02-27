@@ -1,0 +1,18 @@
+.counter {
+    --counter-size: 26px;
+    position: absolute;
+    top: -16px;
+    right: -15px;
+    display: grid;
+    box-sizing: content-box;
+    place-content: center;
+    width: var(--counter-size);
+    height: var(--counter-size);
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    background-color: var(--counter-bg-color, #797FE9);
+    font-family: var(--font-open-sans);
+    font-size: 14px;
+    color: #ffffff;
+    transition: var(--base-transition);
+}

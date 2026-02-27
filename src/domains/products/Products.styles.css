@@ -1,0 +1,38 @@
+.products-page {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 100vh;
+    padding: 20px 30px 20px 0;
+    background-color: #F6F6F6;
+
+    .checkbox-field {
+        --checkbox-size: 22px;
+        --check-mark-checked-bg-color: #3C538E;
+
+        & .checkbox:after {
+            --check-mark-size: 22px;
+        }
+    }
+}
+
+.product-input {
+    --input-size: 48px;
+    --input-border-radius: 8px;
+    --input-font-shorthand: 400 14px/24px var(--font-inter);
+    --input-label-font-shorthand: 400 12px/1 sans-serif;
+    --input-error-font-shorthand: 400 12px/1 sans-serif;
+
+    --input-border-color: transparent;
+    --input-bg-color: #F3F3F3;
+    --input-text-color: #000000;
+    --input-label-text-color: #000000;
+    --input-error-text-color: #F11010;
+    --input-placeholder-text-color: #999999;
+    --icon-fill-color: #999999;
+
+    &:hover,
+    &:focus-within {
+        --input-border-color: #999999;
+    }
+}

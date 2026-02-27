@@ -1,0 +1,17 @@
+.image {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    
+    img {
+        display: block;
+    }
+
+    .fallback {
+        position: absolute;
+        inset: 0px;
+        border-radius: 8px;
+        border: 1px solid #ECECEB;
+        background-color: #C4C4C4;
+    }
+}

@@ -1,0 +1,80 @@
+.input-field {
+    --input-size: 53px;
+    --input-border-radius: 0;
+    --input-font-shorthand: 400 12px/1 sans-serif;
+    --input-label-font-shorthand: 400 12px/1 sans-serif;
+    --input-error-font-shorthand: 400 12px/1 sans-serif;
+
+    --input-border-color: grey;
+    --input-bg-color: transparent;
+    --input-text-color: grey;
+    --input-label-text-color: grey;
+    --input-error-text-color: grey;
+    --input-placeholder-text-color: grey;
+    --icon-fill-color: grey;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+
+    label {
+        font: var(--input-font-shorthand);
+        letter-spacing: .05px;
+        color: var(--input-label-text-color);
+    }
+
+    .error {
+        font: var(--input-font-shorthand);
+        color: var(--input-error-text-color);
+    }
+
+    .input {
+        display: flex;
+        align-items: center;
+        border-radius: var(--input-border-radius);
+        background-color: var(--input-bg-color);
+        border: 1px solid var(--input-border-color);
+        transition: var(--base-transition);
+
+        input {
+            position: relative;
+            flex-grow: 1;
+            height: var(--input-size);
+            padding: 0 24px;
+            font: var(--input-font-shorthand);
+            color: var(--input-text-color);
+
+            &::placeholder {
+                color: var(--input-placeholder-text-color);
+            }
+        }
+
+        svg path {
+            fill: var(--icon-fill-color);
+            transition: var(--base-transition);
+        }
+
+        .icon {
+            display: grid;
+            place-content: center;
+            width: var(--input-size);
+            height: var(--input-size);
+        }
+
+        .toggle {
+            position: relative;
+            cursor: pointer;
+        }
+    }
+
+    &:has(.icon+input) input {
+        margin-left: calc(0px - var(--input-size));
+        padding-left: var(--input-size);
+    }
+
+    &:has(input+.icon) input {
+        margin-right: calc(0px - var(--input-size));
+        padding-right: var(--input-size);
+    }
+}

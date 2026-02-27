@@ -1,0 +1,23 @@
+.toaster {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+
+    .toast {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        width: 360px;
+        padding: 16px 16px 16px 24px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .15);
+        border-radius: 10px;
+        background-color: #fff;
+        font-family: var(--font-open-sans);
+        font-size: 18px;
+    }
+}

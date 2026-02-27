@@ -1,0 +1,26 @@
+.product-availability {
+    display: inline-flex;
+    gap: 2px;
+
+    span {
+        display: block;
+        width: 6px;
+        height: 18px;
+        border-radius: 3px;
+        background-color: var(--availability-fill, #D8D8D8);
+    }
+
+    &.product-availability-normal span {
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            --availability-fill: #949494;
+        }
+    }
+
+    &.product-availability-low span {
+        &:nth-child(3) {
+            --availability-fill: #949494;
+        }
+    }
+}

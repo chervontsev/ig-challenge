@@ -1,0 +1,51 @@
+* * {
+    box-sizing: border-box;
+}
+
+body, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+    font-weight: 400;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    border: none;
+}
+
+input,
+button {
+    background-color: transparent;
+    border: none;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+a, a img {
+    outline: none;
+}
+
+a {
+    cursor: pointer;
+}

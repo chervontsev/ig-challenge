@@ -1,0 +1,16 @@
+@import "./reset.css";
+@import "./vars.css";
+
+body {
+    min-width: 1280px;
+}
+
+a {
+    color: #242EDB;
+    border-bottom: 1px solid var(--link-border-color, #242EDB);
+    transition: var(--base-transition);
+
+    &:hover {
+        --link-border-color: transparent !important;
+    }
+}
